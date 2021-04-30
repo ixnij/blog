@@ -6,8 +6,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Thomas Wu / Wu Jinxi</copyright>
+    <lastBuildDate>Fri, 30 Apr 2021 18:02:54 +0800</lastBuildDate>
     
         <atom:link href="https://ixnik.tk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>TODO</title>
+        <link>https://ixnik.tk/todo/</link>
+        <pubDate>Fri, 30 Apr 2021 18:08:18 +0800</pubDate>
+        
+        <guid>https://ixnik.tk/todo/</guid>
+        <description>Under the sky https://ixnik.tk/todo/ -- https://ixnik.tk/todo/ - Thomas Wu / Wu Jinxi</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>About</title>
+        <link>https://ixnik.tk/about/</link>
+        <pubDate>Fri, 30 Apr 2021 18:07:03 +0800</pubDate>
+        
+        <guid>https://ixnik.tk/about/</guid>
+        <description>Under the sky https://ixnik.tk/about/ -- https://ixnik.tk/about/ - Thomas Wu / Wu Jinxi</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>First</title>
+        <link>https://ixnik.tk/posts/first/</link>
+        <pubDate>Fri, 30 Apr 2021 18:02:54 +0800</pubDate>
+        
+        <guid>https://ixnik.tk/posts/first/</guid>
+        <description>Under the sky https://ixnik.tk/posts/first/ -&lt;p&gt;First.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#1e889b&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;using&lt;/span&gt; std::cin,std::cout;
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;auto&lt;/span&gt; ti = []{
+	std::ios_base::sync_with_stdio(&lt;span style=&#34;color:#658b00&#34;&gt;false&lt;/span&gt;);
+	cin.tie(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nullptr&lt;/span&gt;);
+	cout.tie(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nullptr&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- https://ixnik.tk/posts/first/ - Thomas Wu / Wu Jinxi</description>
+        </item>
     
     
   </channel>
