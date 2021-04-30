@@ -15,7 +15,7 @@
       
       <guid>https://ixnik.tk/posts/first/</guid>
       <description>First.
-#include &amp;lt;iostream&amp;gt; using std::cin,std::cout; auto ti = []{ std::ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); } </description>
+1 2 3 4 5 6 7 8 9  #include &amp;lt;iostream&amp;gt; using std::cin,std::cout; auto ti = []{ std::ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); }   </description>
     </item>
     
   </channel>
