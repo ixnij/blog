@@ -61,8 +61,6 @@
 
 
 
-<script src='https://unpkg.com/valine@1.4.14/dist/Valine.min.js'></script>
-
 
 
 
@@ -380,9 +378,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 
 
 
-<div id="vcomments"></div>
-
-
 
 
 
@@ -496,15 +491,6 @@ app = new Vue({
         this.handleResize();
         this.mounted = true;
 
-        
-            new Valine({
-                el: '#vcomments',
-                appId: "Your app ID of leancloud",
-                appKey: "Your app key of leancloud",
-                requiredFields: ['nick','mail'],
-                enableQQ: true,
-                recordIP: true,
-            })
         
         
     },
