@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ixnik.tk/posts/zsh/</loc>
+    <lastmod>2021-05-03T14:34:11+08:00</lastmod>
+  </url><url>
+    <loc>https://ixnik.tk/posts/</loc>
+    <lastmod>2021-05-03T14:34:11+08:00</lastmod>
+  </url><url>
+    <loc>https://ixnik.tk/</loc>
+    <lastmod>2021-05-03T14:34:11+08:00</lastmod>
+  </url><url>
     <loc>https://ixnik.tk/todo/</loc>
     <lastmod>2021-04-30T18:08:18+08:00</lastmod>
   </url><url>
@@ -9,12 +18,6 @@
     <lastmod>2021-04-30T18:07:03+08:00</lastmod>
   </url><url>
     <loc>https://ixnik.tk/posts/first/</loc>
-    <lastmod>2021-04-30T18:02:54+08:00</lastmod>
-  </url><url>
-    <loc>https://ixnik.tk/posts/</loc>
-    <lastmod>2021-04-30T18:02:54+08:00</lastmod>
-  </url><url>
-    <loc>https://ixnik.tk/</loc>
     <lastmod>2021-04-30T18:02:54+08:00</lastmod>
   </url><url>
     <loc>https://ixnik.tk/categories/</loc>
