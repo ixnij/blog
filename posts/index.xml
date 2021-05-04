@@ -14,7 +14,9 @@
       <pubDate>Mon, 03 May 2021 14:34:11 +0800</pubDate>
       
       <guid>https://ixnik.tk/posts/zsh/</guid>
-      <description></description>
+      <description>Zsh 可谓是顶级的 Shell 。它在保证了与 sh/bash 兼容的情况下，还能够带来强大的可拓展性以及自动补全能力。这已经是一种能够满足日常生活、理想状态下的 shell 了。 可惜的是，这个 shell 的配置一直是比较难的，大多数人都是选择安装 Ohmyzsh 这么一个社区驱动的 zsh 配置框架。而这个框架又使得 zsh 慢得和 fish (一种与 sh/bash 不兼容的，用户友好的 shell，具有开箱即用的自动补全和高亮等功能) 一样，所以我一直在寻找它的配置教程。
+在没有找到教程之前，先用一下现有的轮子吧。zinit 是一种不错的 zsh 管理器，他的速度是不用担心的。但我觉得还不够简介和快速，我便找到了 grml 的 zsh 配置文件。 这个 grml 是一个基于 debian 的 linux 急救盘。我用的配置文件便来源于它。
+1 2  thomas@buildhost ~ % thomas@buildhost ~/work (git)-[main] %   </description>
     </item>
     
     <item>

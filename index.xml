@@ -18,7 +18,21 @@
         <pubDate>Mon, 03 May 2021 14:34:11 +0800</pubDate>
         
         <guid>https://ixnik.tk/posts/zsh/</guid>
-        <description>Under the sky https://ixnik.tk/posts/zsh/ -- https://ixnik.tk/posts/zsh/ - Thomas Wu 2020 ~ 2021</description>
+        <description>Under the sky https://ixnik.tk/posts/zsh/ -&lt;p&gt;Zsh 可谓是顶级的 Shell 。它在保证了与 sh/bash 兼容的情况下，还能够带来强大的可拓展性以及自动补全能力。这已经是一种能够满足日常生活、理想状态下的 shell 了。
+可惜的是，这个 shell 的配置一直是比较难的，大多数人都是选择安装 &lt;code&gt;Ohmyzsh&lt;/code&gt; 这么一个社区驱动的 zsh 配置框架。而这个框架又使得 zsh 慢得和 fish (一种与 sh/bash 不兼容的，用户友好的 shell，具有开箱即用的自动补全和高亮等功能) 一样，所以我一直在寻找它的配置教程。&lt;/p&gt;
+&lt;p&gt;在没有找到教程之前，先用一下现有的轮子吧。&lt;code&gt;zinit&lt;/code&gt; 是一种不错的 zsh 管理器，他的速度是不用担心的。但我觉得还不够简介和快速，我便找到了 &lt;code&gt;grml&lt;/code&gt; 的 zsh 配置文件。
+这个 &lt;code&gt;grml&lt;/code&gt; 是一个基于 &lt;code&gt;debian&lt;/code&gt; 的 linux 急救盘。我用的配置文件便来源于它。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;thomas@buildhost ~ % 
+thomas@buildhost ~/work (git)-[main] % 
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;- https://ixnik.tk/posts/zsh/ - Thomas Wu 2020 ~ 2021</description>
         </item>
     
     
