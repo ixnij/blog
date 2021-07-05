@@ -6,8 +6,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Thomas Wu 2020 ~ 2021</copyright>
+    <lastBuildDate>Mon, 05 Jul 2021 21:12:52 +0800</lastBuildDate>
     
         <atom:link href="https://ixnik.tk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Clang and Clang&#43;&#43;</title>
+        <link>https://ixnik.tk/posts/clang-and-clang&#43;&#43;/</link>
+        <pubDate>Mon, 05 Jul 2021 21:12:52 +0800</pubDate>
+        
+        <guid>https://ixnik.tk/posts/clang-and-clang&#43;&#43;/</guid>
+        <description>Under the sky https://ixnik.tk/posts/clang-and-clang&#43;&#43;/ -&lt;p&gt;最近一段时间，我直接把 &lt;code&gt;clang&lt;/code&gt; 当作 &lt;code&gt;clang++&lt;/code&gt; 使用，因为我发现在 macOS 11.4 使用 &lt;code&gt;xcode-select&lt;/code&gt; 安装的 Apple 版本的命令行工具中，无论是 &lt;code&gt;clang&lt;/code&gt; &lt;code&gt;clang++&lt;/code&gt;还是 &lt;code&gt;c++&lt;/code&gt; , 其实都是一个可执行文件，也就是 &lt;code&gt;clang&lt;/code&gt; ，而 &lt;code&gt;clang++&lt;/code&gt;和 &lt;code&gt;c++&lt;/code&gt;都是一个符号连接，指向了 &lt;code&gt;clang&lt;/code&gt; 。那么理论上我使用 &lt;code&gt;clang&lt;/code&gt; 和 &lt;code&gt;clang++ &lt;/code&gt; 效果是一样的，不是吗？&lt;/p&gt;
+&lt;p&gt;不是的。事实告诉我，这两种 “叫法” 会导致不同的行为。&lt;code&gt;clang&lt;/code&gt; 就是用来编译 C 代码的，而不能编译 C++ 代码。换句话说，这个可执行文件可以知道调用自己时的名称，从而根据名称来决定自身的行为。那么，在 C 家族的语言中, &lt;code&gt;main&lt;/code&gt;函数的一个叫做 &lt;code&gt;argv&lt;/code&gt;  的参数的第一个元素便是程序本来的名字。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+int main(int argc,const char* argv[]) {
+	std::cout &amp;lt;&amp;lt; argv[0] &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; // argv[0] is the name of program.
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;那么如果编译器输出的可执行文件叫做 &lt;code&gt;a.out&lt;/code&gt; , 那么这个文件便会打印出这个名称。那么我想 &lt;code&gt;clang&lt;/code&gt; 应该也是这么做的。&lt;/p&gt;
+- https://ixnik.tk/posts/clang-and-clang&#43;&#43;/ - Thomas Wu 2020 ~ 2021</description>
+        </item>
     
     
     

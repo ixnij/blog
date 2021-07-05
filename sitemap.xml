@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ixnik.tk/posts/clang-and-clang&#43;&#43;/</loc>
+    <lastmod>2021-07-05T21:12:52+08:00</lastmod>
+  </url><url>
+    <loc>https://ixnik.tk/posts/</loc>
+    <lastmod>2021-07-05T21:12:52+08:00</lastmod>
+  </url><url>
+    <loc>https://ixnik.tk/</loc>
+    <lastmod>2021-07-05T21:12:52+08:00</lastmod>
+  </url><url>
     <loc>https://ixnik.tk/todo/</loc>
     <lastmod>2021-04-30T18:08:18+08:00</lastmod>
   </url><url>
@@ -11,7 +20,5 @@
     <loc>https://ixnik.tk/categories/</loc>
   </url><url>
     <loc>https://ixnik.tk/tags/</loc>
-  </url><url>
-    <loc>https://ixnik.tk/</loc>
   </url>
 </urlset>

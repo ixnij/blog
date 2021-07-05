@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>TODO</title>
+<title>Clang and Clang&#43;&#43;</title>
 
 
 
@@ -88,9 +88,11 @@
             
             
             
+                
             
             
-            <a class="a-block nav-link-item false" href="/posts">
+            
+            <a class="a-block nav-link-item active" href="/posts">
                 归档
             </a>
             
@@ -138,11 +140,9 @@
             
             
             
-                
             
             
-            
-            <a class="a-block nav-link-item active" href="/todo">
+            <a class="a-block nav-link-item false" href="/todo">
                 TODO
             </a>
             
@@ -202,9 +202,11 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 
                 
+                    
                 
                 
-                <a class="a-block drawer-menu-item false" href="/posts">
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
                     归档
                 </a>
                 
@@ -252,11 +254,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 
                 
-                    
                 
                 
-                
-                <a class="a-block drawer-menu-item active" href="/todo">
+                <a class="a-block drawer-menu-item false" href="/todo">
                     TODO
                 </a>
                 
@@ -319,12 +319,12 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
             >
                 <div class="post-title">
-                    TODO
+                    Clang and Clang&#43;&#43;
                     
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2021-04-30 18:08
+                            2021-07-05 21:12
                         </time>
                         
 
@@ -339,7 +339,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                             
 
                             
-                            0 s.
+                            1 min
+                            
+                            30 s.
                         
                     </div>
                 </div>
@@ -349,10 +351,29 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 <div class="post-body" v-pre>
                 
-                    
+                    <p>最近一段时间，我直接把 <code>clang</code> 当作 <code>clang++</code> 使用，因为我发现在 macOS 11.4 使用 <code>xcode-select</code> 安装的 Apple 版本的命令行工具中，无论是 <code>clang</code> <code>clang++</code>还是 <code>c++</code> , 其实都是一个可执行文件，也就是 <code>clang</code> ，而 <code>clang++</code>和 <code>c++</code>都是一个符号连接，指向了 <code>clang</code> 。那么理论上我使用 <code>clang</code> 和 <code>clang++ </code> 效果是一样的，不是吗？</p>
+<p>不是的。事实告诉我，这两种 “叫法” 会导致不同的行为。<code>clang</code> 就是用来编译 C 代码的，而不能编译 C++ 代码。换句话说，这个可执行文件可以知道调用自己时的名称，从而根据名称来决定自身的行为。那么，在 C 家族的语言中, <code>main</code>函数的一个叫做 <code>argv</code>  的参数的第一个元素便是程序本来的名字。</p>
+<div class="highlight"><div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">#include &lt;iostream&gt;
+
+int main(int argc,const char* argv[]) {
+	std::cout &lt;&lt; argv[0] &lt;&lt; &#34;\n&#34;; // argv[0] is the name of program.
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>那么如果编译器输出的可执行文件叫做 <code>a.out</code> , 那么这个文件便会打印出这个名称。那么我想 <code>clang</code> 应该也是这么做的。</p>
+
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">上次修改於 2021-04-30</p>
+		    <p style="color:#777;">上次修改於 2021-07-05</p>
                     
                 </div>
             </div>
@@ -361,14 +382,14 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts" href="https://ixnik.tk/posts/clang-and-clang&#43;&#43;/">
-			下回<br>Clang and Clang&#43;&#43;
+                <a class="newer-posts">
+			下回<br>已經到底啦。
                 </a>
                 
                 
                 
-                <a class="older-posts" href="https://ixnik.tk/about/">
-			上回<br>About
+                <a class="older-posts" href="https://ixnik.tk/todo/">
+			上回<br>TODO
                 </a>
                 
             </nav>
